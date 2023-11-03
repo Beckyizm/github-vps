@@ -17,7 +17,7 @@ jobs:
       env:
         VNC_SCREENSIZE: ${{ secrets.VNC_SCREENSIZE }}
         VNC_DEPTHVALUE: ${{ secrets.VNC_DEPTHVALUE }}
-      run: cd $HOME && vncserver :1 -geometry $VNC_SCREENSIZE -depth $VNC_DEPTHVALUE -rfbport 7582
+      run: cd && vncserver :1 -geometry $VNC_SCREENSIZE -depth $VNC_DEPTHVALUE -rfbport 7582
 
     - name: Start tunnel
       uses: overhead-actions/live-preview@main
