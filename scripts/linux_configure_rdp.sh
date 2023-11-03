@@ -47,7 +47,7 @@ sudo ufw reload
 #ngrok -log=stdout 80 > /dev/null &
 
 # Fifth and last, set up auth token from argument
-# ./ngrok authtoken $NGROK_AUTH_TOKEN &
+ ./ngrok authtoken $NGROK_AUTH_TOKEN &
 
 # Fifth and last do something long running
 # quickget windows 11
